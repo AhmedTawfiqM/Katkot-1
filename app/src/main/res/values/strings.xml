@@ -1,0 +1,228 @@
+<resources>
+    <string name="app_name">كتكوت</string>
+    <string name="add_period_title"> إضافة دورة جديدة </string>
+    <string name="finish_period_label_ac">إنهاء الدورة</string>
+    <string name="another_data_label_ac">بيانات أخرى</string>
+    <string name="water_cost_label_ac">إضافة تكلفة ماء</string>
+    <string name="electric_cost_label_ac">إضافة تكلفة كهرباء</string>
+    <string name="work_daily_label_ac">إضافة تكلفة عمالة يومية</string>
+    <string name="blocks_label_ac">إضافة تكلفة تحصينات</string>
+    <string name="medicines_cost_label_ac">إضافة تكلفة أدوية</string>
+    <string name="farm_label_ac">إضافة مزرعة جديدة</string>
+
+
+    <string name="App_ID_ADS">ca-app-pub-7872290833564065~8973823309</string>
+    <string name="ID_BAnner">ca-app-pub-7872290833564065/2408414953</string>
+    <string name="sending">جاري الإرسال..</string>
+    <string name="added">تم الاضافة بنجاح</string>
+
+    <string-array name="titles_FS">
+        <item>titles test</item>
+        <item>titles test</item>
+        <item>titles test</item>
+    </string-array>
+
+
+    <string-array name="anbrTypr">
+        <item>مفتوح</item>
+        <item> نصف مغلق</item>
+        <item>مغلق</item>
+    </string-array>
+
+    <string-array name="numberAnber">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+    <string-array name="Katakit_Types">
+        <item>هبرد</item>
+        <item>اى ار</item>
+        <item>ايفيان 48</item>
+        <item>اربو ايكرز</item>
+        <item>كب</item>
+        <item>روص N60</item>
+        <item>لوهمان 101 تسمين</item>
+        <item>أخرى</item>
+    </string-array>
+
+    <string-array name="Workers_type">
+        <item>عامل مقيم</item>
+        <item> مهندس مقيم</item>
+        <item>طبيب مقيم</item>
+    </string-array>
+
+
+    <string-array name="feed_types">
+        <item>علف بادي 24%</item>
+        <item>علف بادي 23%</item>
+        <item>علف نامي 22%</item>
+        <item>علف نامي 21%</item>
+        <item>علف ناهي 20%</item>
+        <item>علف ناهي 19%</item>
+    </string-array>
+
+
+    <string-array name="blanket_type">
+        <item>نشارة</item>
+        <item>تبن</item>
+    </string-array>
+
+    <string-array name="blanket_quantity">
+        <item>طن </item>
+        <item>بالة</item>
+        <item>شوال</item>
+    </string-array>
+
+    <string-array name="warming_types">
+        <item>غاز</item>
+        <item>سولار</item>
+        <item>أخرى</item>
+    </string-array>
+
+    <string-array name="warming_quantities">
+        <item>لتر</item>
+        <item>أنبوبة</item>
+    </string-array>
+
+    <string-array name="add_daily_data">
+
+        <item>أدوية</item>
+        <item>تحصينات</item>
+        <item>عمالة يومية</item>
+        <item>كهرباء</item>
+        <item>ماء</item>
+        <item>بيانات أخرى</item>
+
+    </string-array>
+
+    <string-array name="medicines_types">
+        <item>100 جرام</item>
+        <item>250 جرام</item>
+        <item>500 جرام</item>
+        <item>1000 جرام</item>
+        <item> أخرى</item>
+    </string-array>
+
+    <string-array name="blockhouses_place">
+        <item>معمل</item>
+        <item>مزرعة</item>
+    </string-array>
+
+    <string-array name="blockhouses_type">
+        <item>حي</item>
+        <item>ميت</item>
+        <item>محضر للهندسة الوراثية</item>
+    </string-array>
+
+    <string-array name="blockhouses_way_live">
+        <item>رش</item>
+        <item>تقطير</item>
+        <item>مياه الشرب</item>
+        <item>حقن تحت الجلد</item>
+        <item>حقن عضل</item>
+    </string-array>
+
+    <string-array name="blockhouses_way_dead">
+        <item>حقن تحت الجلد</item>
+        <item>حقن عضل</item>
+    </string-array>
+    <string-array name="list_governorates">
+
+        <item> إختر المحافظة </item>
+        <item>القاهرة</item>
+        <item>الجيزة</item>
+        <item>الاسكندرية</item>
+        <item>الساحل الشمالي</item>
+        <item>القليوبية</item>
+        <item>الغربية</item>
+        <item>المنوفية</item>
+        <item>الفيوم</item>
+        <item>الدقهلية</item>
+        <item>الشرقية</item>
+        <item>البحيرة</item>
+        <item>دمياط</item>
+        <item>مطروح</item>
+        <item>أسيوط</item>
+        <item>الإسماعيلية</item>
+        <item>الغردقة</item>
+        <item>شرم الشيخ</item>
+        <item>بورسعيد</item>
+        <item>السويس</item>
+        <item>سوهاج</item>
+        <item>المنيا</item>
+        <item>كفر الشيخ</item>
+        <item>الاقصر</item>
+        <item>قنا</item>
+        <item>بني سويف</item>
+
+    </string-array>
+
+    <string-array name="discovers_name">
+        <item>لا يوجد كاشف</item>
+        <item>قائمة بأسماء المواشف</item>
+    </string-array>
+
+    <string-array name="medicines_type">
+        <item>1000 جرام</item>
+        <item>2500 جرام</item>
+        <item>5000 جرام</item>
+    </string-array>
+
+    <string-array name="workers_type">
+        <item>عمال حقن</item>
+        <item>مهندس مشرف</item>
+        <item>طبيب زيارة</item>
+        <item>أخرى</item>
+    </string-array>
+
+    <string-array name="water_types">
+        <item>مياه حكومي</item>
+        <item>مياه مشتراه</item>
+        <item>مياه تم تحليلها</item>
+    </string-array>
+
+    <string-array name="totalcost_for_another_data">
+
+        <item>لكل كتكوت</item>
+        <item>لكل كيلو</item>
+    </string-array>
+
+    <string-array name="chickens_type">
+        <item>سليمة</item>
+        <item>صردة</item>
+    </string-array>
+
+    <string-array name="inventory_Remainder">
+        <item>مطهرات </item>
+        <item>أدوية</item>
+        <item>نشارة</item>
+        <item>علف</item>
+    </string-array>
+
+    <string-array name="reports">
+        <item>إجمالي ثمن الكتاكيت</item>
+        <item>إجمالي نافق الدورة</item>
+        <item>النسبة المئوية للنافق</item>
+        <item>إجمالي تكاليف الدورة</item>
+        <item>الربح و الخسارة</item>
+    </string-array>
+
+    <string-array name="water_sources">
+        <item>إختر مصدر الماء</item>
+        <item>demo</item>
+    </string-array>
+
+    <string-array name="gas_sourcess">
+        <item>إختر مصدر الغاز</item>
+        <item>demo</item>
+    </string-array>
+
+    <string-array name="electricity_sources">
+        <item>إختر مصدر الكهرباء</item>
+        <item>demo</item>
+    </string-array>
+</resources>

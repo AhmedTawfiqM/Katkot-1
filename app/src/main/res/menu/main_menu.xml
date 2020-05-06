@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/itemFarms"
+        android:title="المزارع" />
+
+    <item
+        android:id="@+id/itemPeriods"
+        android:title="الدورات" />
+
+    <item
+        android:id="@+id/itemBlock"
+        android:title="العنابر" />
+
+
+    <item android:title="إضافة">
+        <menu>
+
+            <item
+                android:id="@+id/itemAddFarm"
+                android:title="   مزرعة جديدة" />
+
+            <item
+                android:id="@+id/item_AddPeriod"
+                android:title=" دورة جديدة" />
+
+            <item
+                android:id="@+id/itemAddBlock"
+                android:title="  عنبر جديد" />
+
+        </menu>
+    </item>
+
+
+</menu>

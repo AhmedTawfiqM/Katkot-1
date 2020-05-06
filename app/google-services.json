@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "13673617798",
+    "firebase_url": "https://katkot-app.firebaseio.com",
+    "project_id": "katkot-app",
+    "storage_bucket": "katkot-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13673617798:android:c9aa9b5a4c163a1ffeb407",
+        "android_client_info": {
+          "package_name": "com.ebdaa.katkot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13673617798-3c68utj4u5n1hs6dpg22m4rqvb43i3ds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ebdaa.katkot",
+            "certificate_hash": "4bb4391c498c8ebc88a05e6b41163aa9b762e382"
+          }
+        },
+        {
+          "client_id": "13673617798-fq5cne5f71n12hkganvbbv67uaog0uis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALaSj65X4rKH6MEx7uKFsC4BIJA5OVvSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13673617798-fq5cne5f71n12hkganvbbv67uaog0uis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

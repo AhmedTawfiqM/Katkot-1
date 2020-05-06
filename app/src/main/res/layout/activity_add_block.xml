@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addblock_activity.AddWardActivity">
+
+    <ScrollView
+        android:id="@+id/topscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnComplete"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:id="@+id/layoutFarmInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Spinner
+                android:id="@+id/spinnerFarms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnerNumbBlock"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:entries="@array/numberAnber"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnBlockType"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:entries="@array/anbrTypr"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSupervisorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="إسم المشرف"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textSize="@dimen/_13ssp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBlockSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="سعة العنبر"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textSize="@dimen/_13ssp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBlockSpace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="مساحة العنبر"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textSize="@dimen/_13ssp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/spinnWaterSource"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:entries="@array/water_sources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/spinnGasSource"
+                android:entries="@array/gas_sourcess"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/spinnElectricitySource"
+                android:entries="@array/electricity_sources"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|right"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_nav_complete_bg"
+        android:padding="10dp"
+        android:text="اضافة"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

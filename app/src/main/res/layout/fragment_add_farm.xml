@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutChoosefarm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:gravity="center|right"
+            android:padding="@dimen/_10sdp"
+            android:text="إختر المزرعة :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_20ssp" />
+
+        <Spinner
+            android:id="@+id/spinnerFarmName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_20sdp" />
+
+        <Button
+            android:id="@+id/btn_Choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/btn_nav_complete_bg"
+            android:text="اختيار"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_13ssp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutFarmInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center|right"
+            android:padding="20dp"
+            android:text="بيانات المزرعة"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_15ssp" />
+
+        <Spinner
+            android:id="@+id/spinn_PlaceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:entries="@array/numberAnber" />
+
+        <Spinner
+            android:id="@+id/spinn_PlaceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinn_PlaceNumber"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:entries="@array/anbrTypr" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinn_PlaceType"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_25sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_AdminName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="إسم المسئول عن العنبر"
+                android:inputType="text"
+                android:maxLines="1">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|right"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_nav_complete_bg"
+            android:padding="10dp"
+            android:text="استكمال"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</LinearLayout>

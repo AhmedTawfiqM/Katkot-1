@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingRight="30dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/tvData"
+            android:hint="اكتب هنا"
+            android:gravity="right|top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingRight="30dp"
+        android:text="حفظ"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

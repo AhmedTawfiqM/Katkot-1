@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnComplete"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".ui.electrics_cost.ElectricsCost">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_Nasriat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" نثريات"
+                android:maxLines="1"
+                android:textSize="@dimen/_13ssp"
+                android:inputType="numberDecimal">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_DailyCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" نافق يومي"
+                android:textSize="@dimen/_13ssp"
+                android:maxLines="1"
+                android:inputType="numberDecimal">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_Total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="20dp"
+            android:textSize="@dimen/_13ssp"
+            android:text="نافق تراكمي : "
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_PercentTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="20dp"
+            android:textSize="@dimen/_13ssp"
+            android:text="النسبة المئوية : "
+            android:textColor="@color/colorPrimaryDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_WeeklyWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" متوسط الوزن الأسبوعي"
+                android:maxLines="1"
+                android:textSize="@dimen/_13ssp"
+                android:inputType="numberDecimal">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/totalCostLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerTotalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:entries="@array/totalcost_for_another_data" />
+
+            <TextView
+                android:id="@+id/tv_TotalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13ssp"
+                android:layout_toLeftOf="@+id/spinnerTotalCost"
+                android:text="التكلفة الكلية : " />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_nav_complete_bg"
+        android:padding="10dp"
+        android:text="إضافة"
+        android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</layout>

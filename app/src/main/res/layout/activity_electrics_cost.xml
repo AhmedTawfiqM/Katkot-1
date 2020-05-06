@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnComplete"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".ui.electrics_cost.ElectricsCost">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_90sdp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_Month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13ssp"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:hint="الشهر">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_Slarary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/_13ssp"
+                        android:hint=" المبلغ">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|right"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_nav_complete_bg"
+            android:padding="10dp"
+            android:text="إضافة"
+            android:textColor="#ffffff" />
+
+
+    </RelativeLayout>
+</layout>

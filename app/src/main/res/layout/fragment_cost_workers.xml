@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnComplete"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center|right"
+                    android:text="تكاليف العمالة"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_20sdp" />
+
+                <Spinner
+                    android:id="@+id/WorkerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:entries="@array/Workers_type" />
+
+                <LinearLayout
+                    android:id="@+id/newWorkerData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_NumberWorkers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="العدد"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_13ssp">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_20sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_SalaryMonthly"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="المرتب الشهري"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_NumberMonthsPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="عدد شهور الدورة"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_NumberWorkersClean"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="عدد عمال التطهير"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_SalaryCleanerWorker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="مرتب عامل التطهير"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="اجمالي : 200 pounds "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13ssp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|right"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_nav_complete_bg"
+            android:padding="10dp"
+            android:text="استكمال"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_13ssp" />
+
+    </RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnComplete"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:id="@+id/top1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context=".ui.addmedicines_activity.AddMedicinesActicity">
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginEnd="20dp"
+                    android:entries="@array/workers_type" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_NumberDailyWorjers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" العدد  "
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_SalaryWorker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" الأجرة  "
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="الاجمالي : 1000"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_nav_complete_bg"
+            android:padding="10dp"
+            android:text="إضافة"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</layout>

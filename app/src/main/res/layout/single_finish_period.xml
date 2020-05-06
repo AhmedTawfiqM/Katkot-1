@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="SinglePeriodBinding">
+
+        <import type="com.ebdaa.katkot.utils.Helper" />
+
+        <variable
+            name="period"
+            type="com.ebdaa.katkot.Test.TestPeriod" />
+
+        <variable
+            name="Listener"
+            type="com.ebdaa.katkot.utils.RowListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/lLChooseFarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_PeriodNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5ssp"
+                        android:gravity="center|right"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_FarmName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7ssp"
+                        android:layout_marginRight="@dimen/_7ssp"
+                        android:gravity="center|right"
+                        android:text="@{period.farmName}"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginEnd="@dimen/_45sdp"
+                        android:background="@drawable/bg_strokes"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@{period.date}"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <Button
+                        android:id="@+id/btn_Choose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_12sdp"
+                        android:background="@drawable/btn_nav_complete_bg"
+                        android:onClick="@{(v) -> Listener.onRowClick()}"
+                        android:text="انهاء"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</layout>

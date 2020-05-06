@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_add_period"
+    app:startDestination="@id/fragment_AddFarm">
+
+    <fragment
+        android:id="@+id/fragment_AddFarm"
+        android:name="com.ebdaa.katkot.ui.fragments_add_period.Fragment_AddFarm"
+        android:label="fragment_add_farm"
+        tools:layout="@layout/fragment_add_farm" >
+        <action
+            android:id="@+id/action_fragment_AddFarm_to_fragment_AddKatakit"
+            app:destination="@id/fragment_AddKatakit" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_AddKatakit"
+        android:name="com.ebdaa.katkot.ui.fragments_add_period.Fragment_AddKatakit"
+        android:label="fragment_add_kakatit"
+        tools:layout="@layout/fragment_add_kakatit" >
+        <action
+            android:id="@+id/action_fragment_AddKatakit_to_fragment_CostWorkers"
+            app:destination="@id/fragment_CostWorkers" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_CostWorkers"
+        android:name="com.ebdaa.katkot.ui.fragments_add_period.Fragment_CostWorkers"
+        android:label="fragment_cost_workers"
+        tools:layout="@layout/fragment_cost_workers" >
+        <action
+            android:id="@+id/action_fragment_CostWorkers_to_fragmentCostFeed"
+            app:destination="@id/fragmentCostFeed" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCostFeed"
+        android:name="com.ebdaa.katkot.ui.fragments_add_period.FragmentCostFeed"
+        android:label="fragment_cost_feed"
+        tools:layout="@layout/fragment_cost_feed" >
+        <action
+            android:id="@+id/action_fragmentCostFeed_to_fragmentCostsBlanket"
+            app:destination="@id/fragmentCostsBlanket" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCostsBlanket"
+        android:name="com.ebdaa.katkot.ui.fragments_add_period.FragmentCostsBlanket"
+        android:label="fragment_costs_blanket"
+        tools:layout="@layout/fragment_costs_blanket" >
+        <action
+            android:id="@+id/action_fragmentCostsBlanket_to_fragmentCleaningCosts"
+            app:destination="@id/fragmentCleaningCosts" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCleaningCosts"
+        android:name="com.ebdaa.katkot.ui.fragments_add_period.FragmentCleaningCosts"
+        android:label="fragment_cleaning_costs"
+        tools:layout="@layout/fragment_cleaning_costs" >
+        <action
+            android:id="@+id/action_fragmentCleaningCosts_to_fragmentWarmingCosts"
+            app:destination="@id/fragmentWarmingCosts" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWarmingCosts"
+        android:name="com.ebdaa.katkot.ui.fragments_add_period.FragmentWarmingCosts"
+        android:label="fragment_warming_costs"
+        tools:layout="@layout/fragment_warming_costs" >
+        <action
+            android:id="@+id/action_fragmentWarmingCosts_to_fragmentOtherCosts"
+            app:destination="@id/fragmentOtherCosts" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOtherCosts"
+        android:name="com.ebdaa.katkot.ui.fragments_add_period.FragmentOtherCosts"
+        android:label="fragment_other_costs"
+        tools:layout="@layout/fragment_other_costs" />
+</navigation>

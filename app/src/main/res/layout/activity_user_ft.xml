@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".ui.userfirsttime.UserFTActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mDotsLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/mDotsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Layout"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+
+    <RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp">
+
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="#ffffff"
+            android:text="إنشاء حساب"
+            android:textSize="@dimen/_13ssp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_LoginIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_Register"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_60sdp"
+            android:background="@drawable/selector_bg_layout"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center|top"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_Login"
+                android:text="بالفعل لديك حساب ؟ "
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/tv_Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" تسجيل الدخول "
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_13ssp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

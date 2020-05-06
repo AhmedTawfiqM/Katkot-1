@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/close"
+                        android:layout_width="@dimen/_37sdp"
+                        android:layout_height="@dimen/_37sdp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/close"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:id="@+id/tv_FarmAndPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|right"
+                        android:padding="10dp"
+                        android:text="إختر المزرعة والعنبر"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lLChooseFarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+
+                    <Spinner
+                        android:id="@+id/spinnerFarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:entries="@array/workers_type" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:entries="@array/medicines_type" />
+
+                    <Button
+                        android:id="@+id/btn_Choose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:background="@drawable/btn_nav_complete_bg"
+                        android:text="اختيار"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lLAddData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:gravity="center|right"
+                        android:text="إضافة جديد"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_17ssp" />
+
+
+                    <ListView
+                        android:id="@+id/list_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_15sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>

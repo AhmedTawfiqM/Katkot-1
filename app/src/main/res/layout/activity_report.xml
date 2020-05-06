@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#F1F1F1"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.report_activity.ReportActivity">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/bg_strokes"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/spinnerReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:entries="@array/reports" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutDATE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/ShowReport"
+                android:background="@drawable/bg_strokes"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_TotalFarms1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5ssp"
+                        android:layout_toRightOf="@+id/tvDateFrom"
+                        android:gravity="center|right"
+                        android:maxLines="1"
+                        android:text="من"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/tvDateFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:background="@drawable/bg_strokes"
+                        android:entries="@array/workers_type"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_Total1"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5ssp"
+                        android:layout_toRightOf="@+id/tvDateTo"
+                        android:gravity="center|right"
+                        android:maxLines="1"
+                        android:text="إلى "
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/tvDateTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:background="@drawable/bg_strokes"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lLChooseFarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_strokes"
+                android:orientation="horizontal"
+                android:padding="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:id="@+id/Chooser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/ShowReport"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_TotalFarms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/_5ssp"
+                            android:gravity="center|right"
+                            android:maxLines="1"
+                            android:text="المزرعة"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerFarm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_toLeftOf="@+id/tv_TotalFarms"
+                            android:entries="@array/workers_type" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_Total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/_5ssp"
+                            android:gravity="center|right"
+                            android:maxLines="1"
+                            android:text="الدورة "
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerPeriod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_toLeftOf="@+id/tv_Total"
+                            android:entries="@array/medicines_type" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ShowReport"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@drawable/bg_go_click"
+                    android:clickable="true"
+                    android:contentDescription="عرض"
+                    android:focusable="true"
+                    android:src="@drawable/row_go_black" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lLChooseFarm"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="total"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

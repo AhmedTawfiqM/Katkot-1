@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0DDDD"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/lLChooseFarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_TotalFarms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5ssp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="23 مزرعة"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/tv_TotalPeriods"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7ssp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_7ssp"
+                            android:gravity="center"
+                            android:text="78 دورة"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_16ssp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_45sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_45sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/bg_strokes"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="1234 ج.م"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_15sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/banner_Frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topCard" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/banner_Frame"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5ssp"
+                            android:gravity="center|right"
+                            android:maxLines="1"
+                            android:text="23 ج.م"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7ssp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_7ssp"
+                            android:gravity="center|right"
+                            android:text="78 ج.م"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_16ssp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5ssp"
+                            android:gravity="center|right"
+                            android:maxLines="1"
+                            android:text="23 ج.م"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_18ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7ssp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_7ssp"
+                            android:gravity="center|right"
+                            android:text="78 ج.م"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_16ssp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_45sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_45sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/bg_strokes"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="1234 ج.م"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/_15sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>

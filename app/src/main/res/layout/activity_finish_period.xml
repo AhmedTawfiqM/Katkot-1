@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:id="@+id/topscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnComplete"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:id="@+id/layoutFarmInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:gravity="center|right"
+                    android:padding="10dp"
+                    android:text="بيانات الدجاج المباع"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:gravity="center|right"
+                    android:text="  نوع الدجاج المباع"
+                    android:textSize="@dimen/_13ssp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/chickens_type" />
+
+                <TextView
+                    android:id="@+id/tv_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/bg_strokes"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="التاريخ"
+                    android:textSize="@dimen/_13ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_TotalWeightSell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="إجمالي الوزن المباع"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_TotalNumberSell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="إجمالي العدد المباع"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="متوسط وزن الدجاج"
+                    android:textSize="@dimen/_13ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_TotalCostSell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="إجمالي ثمن البيع"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_CostSell_Sebla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ثمن بيع السبلة"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+                    android:padding="@dimen/_10sdp"
+                    android:text="المتبقى في المخزن"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center|right"
+                    android:text="  نوع المتبقى في المخزن"
+                    android:textSize="@dimen/_13ssp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/inventory_Remainder" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_Quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="الكمية"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_TotalCostofRemainder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ثمن البيع الكلي"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|right"
+            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_nav_complete_bg"
+            android:padding="10dp"
+            android:text="انهاء الدورة"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</layout>

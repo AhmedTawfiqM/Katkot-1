@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addblock_activity.AddWardActivity">
+
+    <ScrollView
+        android:id="@+id/topscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnComplete"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:id="@+id/layoutFarmInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPeriodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="إسم الدورة"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textSize="@dimen/_13ssp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+                <Spinner
+                    android:id="@+id/spinnerFarms"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Spinner
+                    android:id="@+id/spinnerNumbBlock"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:entries="@array/numberAnber"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/bg_strokes"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="تاريخ البداية"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/bg_strokes"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="تاريخ الإنتهاء"
+                    android:textSize="@dimen/_13ssp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|right"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_nav_complete_bg"
+        android:padding="10dp"
+        android:text="اضافة"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

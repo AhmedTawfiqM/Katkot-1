@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.signup.SignUpActivity">
+
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:src="@drawable/kaktot_orange" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="تطبيق كتكوت"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_UserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="إسم المستخدم"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="رقم الهاتف "
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:textSize="@dimen/_13ssp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_Pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="كلمة السر"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="15dp">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btn_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/btn_nav_complete_bg"
+                    android:drawableLeft="@drawable/row_go_white"
+                    android:paddingLeft="10dp"
+                    android:text="إنشاء حساب"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>

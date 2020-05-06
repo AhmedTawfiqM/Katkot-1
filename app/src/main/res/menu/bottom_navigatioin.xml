@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemReports"
+        android:icon="@drawable/reports"
+        android:title="تقارير" />
+
+    <item
+        android:id="@+id/itemPeriods"
+        android:icon="@drawable/finishperiod"
+        android:title="إنهاء دورة" />
+
+    <item
+        android:id="@+id/plusId"
+        android:visible="true"
+        android:title="" />
+    <item
+        android:icon="@drawable/home"
+        android:title="" />
+
+
+    <item
+        android:id="@+id/itemMainPage"
+        android:icon="@drawable/home"
+        android:title="الرئيسية" />
+
+</menu>
