@@ -1,35 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item
-        android:id="@+id/itemFarms"
-        android:title="المزارع" />
-
-    <item
-        android:id="@+id/itemBlock"
-        android:title="العنابر" />
-
-    <item
-        android:id="@+id/itemPeriods"
-        android:title="الدورات" />
-
-    <item android:title="إضافة">
-        <menu>
-
-            <item
-                android:id="@+id/itemAddFarm"
-                android:title="   مزرعة جديدة" />
-
-            <item
-                android:id="@+id/itemAddBlock"
-                android:title="  عنبر جديد" />
-
-            <item
-                android:id="@+id/item_AddPeriod"
-                android:title=" دورة جديدة" />
-
-        </menu>
-    </item>
-
-
+    <group>
+        <item
+            android:id="@+id/itemFarms"
+            android:title="@string/farms" />
+        <item
+            android:id="@+id/itemBlock"
+            android:title="@string/wards" />
+        <item
+            android:id="@+id/itemPeriods"
+            android:title="@string/cycles" />
+    </group>
+    <group>
+        <item android:title="@string/add_new">
+            <menu>
+                <item
+                    android:id="@+id/itemAddFarm"
+                    android:title="@string/new_farm" />
+                <item
+                    android:id="@+id/itemAddBlock"
+                    android:title="@string/new_ward" />
+                <item
+                    android:id="@+id/item_AddPeriod"
+                    android:title="@string/new_cycle" />
+            </menu>
+        </item>
+    </group>
 </menu>

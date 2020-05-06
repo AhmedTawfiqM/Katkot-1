@@ -15,6 +15,16 @@
     <string name="ID_BAnner">ca-app-pub-7872290833564065/2408414953</string>
     <string name="sending">جاري الإرسال..</string>
     <string name="added">تم الاضافة بنجاح</string>
+    <string name="wrad_name">إسم العنبر</string>
+    <string name="ward_capcity">سعة العنبر</string>
+    <string name="ward_space">مساحة العنبر</string>
+    <string name="farms">المزارع</string>
+    <string name="wards">العنابر</string>
+    <string name="cycles">الدورات</string>
+    <string name="add_new">إضافة جديد</string>
+    <string name="new_farm">مزرعة جديدة</string>
+    <string name="new_ward">عنبر جديد</string>
+    <string name="new_cycle">دورة جديدة</string>
 
     <string-array name="titles_FS">
         <item>titles test</item>
@@ -24,12 +34,18 @@
 
 
     <string-array name="anbrTypr">
+        <item>اختر نوع العنبر</item>
         <item>مفتوح</item>
         <item> نصف مغلق</item>
         <item>مغلق</item>
     </string-array>
 
+    <string-array name="SelectFarm">
+        <item>اختر اسم المزرعة</item>
+    </string-array>
+
     <string-array name="numberAnber">
+        <item>اختر رقم العنبر</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>

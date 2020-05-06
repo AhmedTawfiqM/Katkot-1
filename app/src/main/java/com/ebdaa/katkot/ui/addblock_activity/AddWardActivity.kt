@@ -68,9 +68,8 @@ class AddWardActivity : AppCompatActivity() {
 
     private fun processResultAddBlock(response: Response<JsonObject>?) {
 
-
-        val jsonResult =
-                JSONObject(JSONObject(Gson().toJson(response!!.body())).getString("CallMethodResult"))
+        //val jsonResult = JSONObject(JSONObject(Gson().toJson(response!!.body())).getString("CallMethodResult"))
+        val jsonResult = JSONObject(Gson().toJson(response!!.body()))
         Log.d("debugL::", "success ResultCode -> ${jsonResult.getString("ResultCode")}")
 
         val ResultCode = jsonResult.getString("ResultCode")
@@ -92,7 +91,8 @@ class AddWardActivity : AppCompatActivity() {
         val farmName: String = allFarms!!.get(spinnerFarms.selectedItemPosition).ID
         val block = SingleBlock(
                 farmName,
-                spinnerNumbBlock.selectedItem.toString(),
+                //spinnerNumbBlock.selectedItem.toString(),
+                etWardName.text.toString(),
                 spinnBlockType.selectedItem.toString(),
                 //etSupervisorName.text.toString(),
                 etBlockSize.text.toString(),
@@ -122,23 +122,29 @@ class AddWardActivity : AppCompatActivity() {
             isValidate = false
             spinnerFarms.performClick()
         }
-        if (spinnerNumbBlock.selectedItemPosition == 0
+        if (etWardName.text.toString().trim().isEmpty() ||
+                etWardName.text.toString().trim().isBlank()
+        ) {
+            isValidate = false
+            etWardName.setError("")
+        }
+        /*if (spinnerNumbBlock.selectedItemPosition == 0
         ) {
             isValidate = false
             spinnerNumbBlock.performClick()
-        }
+        }*/
         if (spinnBlockType.selectedItemPosition == 0
         ) {
             isValidate = false
             spinnBlockType.performClick()
         }
 
-        if (etSupervisorName.text.toString().trim().isEmpty() ||
+        /*if (etSupervisorName.text.toString().trim().isEmpty() ||
                 etSupervisorName.text.toString().trim().isBlank()
         ) {
             isValidate = false
             etSupervisorName.setError("")
-        }
+        }*/
         if (etBlockSize.text.toString().trim().isEmpty() ||
                 etBlockSize.text.toString().trim().isBlank()
         ) {
@@ -153,7 +159,7 @@ class AddWardActivity : AppCompatActivity() {
             etBlockSpace.setError("")
         }
 
-        if (spinnWaterSource.selectedItemPosition == 0
+        /*if (spinnWaterSource.selectedItemPosition == 0
         ) {
             isValidate = false
             spinnWaterSource.performClick()
@@ -167,10 +173,9 @@ class AddWardActivity : AppCompatActivity() {
         ) {
             isValidate = false
             spinnElectricitySource.performClick()
-        }
+        }*/
 
         return isValidate
-
     }
 
     private fun getAllFarms() {

@@ -14,7 +14,7 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.newperiodactivity.NewPeriodActivity"></activity>
+        <activity android:name=".ui.newperiodactivity.NewPeriodActivity" />
         <activity android:name=".ui.farms.AllFarms" />
         <activity android:name=".ui.addblock_activity.AddWardActivity" />
         <activity

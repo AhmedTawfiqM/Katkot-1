@@ -13,7 +13,6 @@
         android:layout_above="@+id/btnComplete"
         android:fillViewport="true">
 
-
         <LinearLayout
             android:id="@+id/layoutFarmInfo"
             android:layout_width="match_parent"
@@ -24,9 +23,29 @@
             <Spinner
                 android:id="@+id/spinnerFarms"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:entries="@array/SelectFarm"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etWardName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/wrad_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textSize="@dimen/_13ssp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Spinner
+                android:visibility="gone"
                 android:id="@+id/spinnerNumbBlock"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:layout_width="match_parent"
@@ -41,6 +60,7 @@
                 android:layout_height="wrap_content" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp">
@@ -67,7 +87,7 @@
                     android:id="@+id/etBlockSize"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="سعة العنبر"
+                    android:hint="@string/ward_capcity"
                     android:inputType="number"
                     android:maxLines="1"
                     android:padding="15dp"
@@ -86,7 +106,7 @@
                     android:id="@+id/etBlockSpace"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="مساحة العنبر"
+                    android:hint="@string/ward_space"
                     android:inputType="number"
                     android:maxLines="1"
                     android:padding="15dp"

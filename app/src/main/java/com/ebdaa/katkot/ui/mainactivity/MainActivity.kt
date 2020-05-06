@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         //Cause the app Slower...,
         //NotificationHelper.showNotiifcation(this@MainActivity)
         //Init Ads
-        InitAds()
+        //InitAds()
 
     }
 

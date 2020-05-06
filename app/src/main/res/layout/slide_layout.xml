@@ -17,6 +17,7 @@
 
             <ImageView
                 android:id="@+id/iv_Icon"
+                android:layout_centerInParent="true"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_300sdp"
                 android:src="@drawable/kaktot_orange" />
